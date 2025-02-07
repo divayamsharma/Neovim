@@ -33,6 +33,9 @@ vim.keymap.set('n', '<C-l>', ':w<CR>', {noremap = true, silent = true})
 
 ----------------------------------------------------------------------------------------------------
 -- 🔑 Key Bindings 🔑
+
+-- toggle clipboard On and OFF
+
 -- "9" Go to the start of the line (Normal Mode)
 vim.keymap.set('n', '9', '0', {noremap = true, silent = true})
 
@@ -53,6 +56,7 @@ vim.keymap.set('i', '<A-Left>', '<C-o>b', {noremap = true, silent = true})
 ----------------------------------------------------------------------------------------------------
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
-vim.keymap.set ("n", "_", "<C-x>")
+vim.keymap.set("n", "_", "<C-x>")
+
 
 

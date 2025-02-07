@@ -18,6 +18,7 @@ return {
           "html",     -- HTML
           "cssls",    -- CSS
           "ts_ls",    -- JavaScript/TypeScript
+          "clangd",   -- Add C/C++ LSP
         },
         automatic_installation = true, -- Automatically install missing servers
       })
@@ -51,6 +52,12 @@ return {
 
       -- Pyright LSP setup
       lspconfig.pyright.setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+      })
+
+      -- Clangd Setup
+      lspconfig.clangd.setup({
         capabilities = capabilities,
         on_attach = on_attach,
       })
